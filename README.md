@@ -1,4 +1,4 @@
-Created a React app that is fetching user accounts from github's API: 'https://api.github.com/users', accessible with a basic Bootstrap-based UI.
+Basic react app fetching user accounts from github's API: 'https://api.github.com/users', accessible with a basic Bootstrap-based UI.
 
 ## Available Scripts
 
