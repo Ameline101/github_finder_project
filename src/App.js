@@ -1,19 +1,20 @@
 import React, {Component, Fragment} from 'react';
 import './App.css';
 import Navbar from './components/layout/Navbar';
+import Users from './components/users/Users';
 
 class App extends Component{
-
-  foo = () => 'Barz';
-
   render(){
    
     return (
       <Fragment>
-        <Navbar />
+        <Navbar title="Github finder"/>
+        <div className='container'>
+          <Users/>
+        </div>
       </Fragment>
     );
-}  
+ }  
 }
 
 export default App;

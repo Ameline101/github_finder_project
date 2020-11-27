@@ -1,13 +1,25 @@
-import React, { Component } from 'react'
+import React from 'react'
+import {ReactComponent as Logo} from './github.svg'
+import PropTypes from 'prop-types'
 
-export class Navbar extends Component {
-    render() {
+
+const Navbar = ({title}) => {
         return (
-            <div>
-                <h1> Navbar </h1>
-            </div>
+            <nav className='navbar bg-primary'>
+                <h1> 
+                <Logo/> 
+                {title}
+                </h1>
+            </nav>
         )
-    }
+}
+
+Navbar.defaultProps = {
+    title: 'Github Finder'
+}
+
+Navbar.propTypes = {
+    title: PropTypes.string.isRequired
 }
 
 export default Navbar
