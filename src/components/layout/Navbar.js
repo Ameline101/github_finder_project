@@ -7,7 +7,7 @@ const Navbar = ({title}) => {
         return (
             <nav className='navbar bg-primary'>
                 <h1> 
-                <Logo/> 
+                <Logo width='30' display='block'/> 
                 {title}
                 </h1>
             </nav>
@@ -15,7 +15,7 @@ const Navbar = ({title}) => {
 }
 
 Navbar.defaultProps = {
-    title: 'Github Finder'
+    title: '  Github Finder'
 }
 
 Navbar.propTypes = {
